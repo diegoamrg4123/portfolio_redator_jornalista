@@ -226,11 +226,15 @@
             display: flex;
             flex-direction: column;
             height: 100%;
+            text-decoration: none;
+            color: inherit;
         }
 
         .article-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+            text-decoration: none;
+            color: inherit;
         }
 
         .article-card.coming-soon {
@@ -345,86 +349,6 @@
             display: flex;
             gap: 6px;
             flex-wrap: wrap;
-        }
-
-        /* Portfolio Section */
-        .portfolio {
-            background-color: #f1f1f1;
-        }
-
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .portfolio-item {
-            background-color: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-
-        .portfolio-item:hover {
-            transform: translateY(-10px);
-        }
-
-        .portfolio-img {
-            height: 200px;
-            overflow: hidden;
-            background: linear-gradient(135deg, #3b82f6, #1e40af);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .portfolio-img i {
-            font-size: 4rem;
-            color: white;
-            opacity: 0.8;
-        }
-
-        .portfolio-info {
-            padding: 20px;
-        }
-
-        .portfolio-info h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            color: #2c3e50;
-        }
-
-        .portfolio-info p {
-            color: #777;
-            margin-bottom: 15px;
-        }
-
-        .portfolio-meta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .portfolio-tags {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-
-        .tag {
-            background: #e0f2fe;
-            color: #0284c7;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 500;
-            text-transform: uppercase;
-        }
-
-        .portfolio-year {
-            color: #e74c3c;
-            font-weight: 500;
         }
 
         /* Services Section */
@@ -654,7 +578,6 @@
                         <li><a href="#home">Início</a></li>
                         <li><a href="#sobre">Sobre</a></li>
                         <li><a href="#artigos">Artigos</a></li>
-                        <li><a href="#portfolio">Trabalhos</a></li>
                         <li><a href="#servicos">Serviços</a></li>
                         <li><a href="#contato">Contato</a></li>
                     </ul>
@@ -687,10 +610,9 @@
                     <p>Cientista Social formado pela UFG com especialização em métodos quantitativos e análise de dados estatísticos. Minha trajetória combina formação acadêmica sólida com mais de 4 anos de experiência prática em redação para grandes portais de tecnologia.</p>
                     <p>Atualmente, integro o projeto GuaIA na UFG, desenvolvendo soluções de inteligência artificial para combate à desinformação eleitoral. Possuo certificações em Ciência de Dados (FGV) e Pesquisa Avançada em Redes Sociais (AFP).</p>
                     <p>Busco oportunidades em jornalismo de dados onde possa aplicar conhecimentos em R, Python e análise estatística para produzir reportagens baseadas em evidências e fact-checking rigoroso. Acredito no poder dos dados para contar histórias que transformam a sociedade.</p>
-                    <a href="#contato" class="btn">Trabalhe Comigo</a>
                 </div>
                 <div class="about-image">
-                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'><rect fill='%23f1f5f9' width='400' height='500'/><circle cx='200' cy='180' r='80' fill='%23e74c3c'/><path d='M120 320 Q200 280 280 320 L280 500 L120 500 Z' fill='%232c3e50'/><text x='200' y='400' text-anchor='middle' fill='%2364748b' font-size='16' font-weight='600'>Diego Amorim Goulart</text><text x='200' y='420' text-anchor='middle' fill='%2394a3b8' font-size='12'>Jornalista de Dados</text></svg>" alt="Diego Amorim Goulart - Jornalista de Dados">
+                    <img src="https://raw.githubusercontent.com/diegoamrg4123/portfolio_academico_diego_amorim/main/cortado-apresentacao-perfil.png" alt="Diego Amorim Goulart - Jornalista de Dados">
                 </div>
             </div>
         </div>
@@ -703,235 +625,85 @@
                 <h2>Artigos e Publicações</h2>
             </div>
             <div class="articles-grid">
-                <div class="article-card">
+                <a href="https://substack.com/home/post/p-172035997" target="_blank" class="article-card">
+                    <div class="article-header">
+                        <div class="article-category">Jornalismo de Dados</div>
+                        <div class="article-date">Substack • 2025</div>
+                    </div>
+                    <h3>A armadilha dos percentuais: Quando "dobrar o risco" significa quase nada na prática</h3>
+                    <p class="article-subtitle">Para não cair em manchetes sensacionalistas e interpretar corretamente dados estatísticos do dia a dia</p>
+                    <div class="article-footer">
+                        <div class="article-tags">
+                            <span class="tag">Estatística</span>
+                            <span class="tag">Data Science</span>
+                            <span class="tag">Comunicação Científica</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://substack.com/home/post/p-171308850" target="_blank" class="article-card">
                     <div class="article-header">
                         <div class="article-category">Análise Política</div>
                         <div class="article-date">Substack • 2024</div>
                     </div>
                     <h3>Uma resposta do Grok me fez escrever esse artigo</h3>
                     <p class="article-subtitle">A importância de entender o básico sobre sistemas Parlamentaristas, mesmo vivendo sob um Presidencialismo</p>
-                    <p>Análise acadêmica sobre as diferenças fundamentais entre presidencialismo e parlamentarismo, explorando como comparações superficiais entre democracias podem ser enganosas. O artigo examina casos como Angela Merkel na Alemanha e Nayib Bukele em El Salvador.</p>
-                    <div class="article-highlights">
-                        <strong>Destaques:</strong> Análise institucional, metodologias de medição democrática, índices V-Dem, teoria política aplicada
-                    </div>
                     <div class="article-footer">
-                        <a href="https://substack.com/home/post/p-171308850" target="_blank" class="article-link">
-                            <i class="fas fa-external-link-alt"></i> Ler artigo completo
-                        </a>
                         <div class="article-tags">
                             <span class="tag">Ciência Política</span>
                             <span class="tag">Democracia</span>
                             <span class="tag">Análise Institucional</span>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="article-card">
+                <a href="https://www.adrenaline.com.br/games/brazil-pixel-brasileiro-cria-ferramenta-que-pode-revolucionar-analises-tecnicas-de-jogos" target="_blank" class="article-card">
                     <div class="article-header">
                         <div class="article-category">Tecnologia & Games</div>
                         <div class="article-date">Adrenaline • 2025</div>
                     </div>
                     <h3>Brazil Pixel: Brasileiro cria ferramenta que pode revolucionar análises técnicas de jogos</h3>
                     <p class="article-subtitle">Ferramenta brasileira detecta resolução nativa de jogos em tempo real e automatiza análises antes feitas manualmente</p>
-                    <p>Reportagem técnica sobre inovação brasileira que usa Transformada Discreta do Cosseno (DCT) para automatizar a detecção de resolução nativa em jogos, substituindo métodos manuais tradicionais usados por canais como Digital Foundry.</p>
-                    <div class="article-highlights">
-                        <strong>Destaques:</strong> Processamento de sinais digitais, análise espectral, upscaling, metodologias de análise técnica
-                    </div>
                     <div class="article-footer">
-                        <a href="https://www.adrenaline.com.br/games/brazil-pixel-brasileiro-cria-ferramenta-que-pode-revolucionar-analises-tecnicas-de-jogos" target="_blank" class="article-link">
-                            <i class="fas fa-external-link-alt"></i> Ler artigo completo
-                        </a>
                         <div class="article-tags">
                             <span class="tag">Tecnologia</span>
                             <span class="tag">Games</span>
                             <span class="tag">Inovação</span>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="article-card">
+                <a href="https://www.mundoconectado.com.br/inteligencia-artificial/claude-agora-permite-criar-e-compartilhar-apps-interativos-com-ia-de-forma-simples-e-gratuita" target="_blank" class="article-card">
                     <div class="article-header">
                         <div class="article-category">Inteligência Artificial</div>
                         <div class="article-date">Mundo Conectado • 2025</div>
                     </div>
                     <h3>Claude agora permite criar e compartilhar apps interativos com IA de forma simples e gratuita</h3>
                     <p class="article-subtitle">Artifacts do Claude democratizam criação de aplicativos com funcionalidade de compartilhamento gratuito</p>
-                    <p>Cobertura da atualização do Claude que expandiu o recurso Artifacts para todos os usuários, permitindo criação de apps interativos apenas com comandos de texto. Analisa impacto da democratização do desenvolvimento de IA e modelo de cobrança inovador.</p>
-                    <div class="article-highlights">
-                        <strong>Destaques:</strong> No-code development, React, compartilhamento de apps, democratização da IA, modelo de negócios
-                    </div>
                     <div class="article-footer">
-                        <a href="https://www.mundoconectado.com.br/inteligencia-artificial/claude-agora-permite-criar-e-compartilhar-apps-interativos-com-ia-de-forma-simples-e-gratuita" target="_blank" class="article-link">
-                            <i class="fas fa-external-link-alt"></i> Ler artigo completo
-                        </a>
                         <div class="article-tags">
                             <span class="tag">IA</span>
                             <span class="tag">Claude</span>
                             <span class="tag">No-Code</span>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="article-card">
+                <a href="https://www.mundoconectado.com.br/inteligencia-artificial/openai-anuncia-iniciativa-openai-for-countries-para-apoiar-infraestrutura-de-ia-em-paises-aliados" target="_blank" class="article-card">
                     <div class="article-header">
                         <div class="article-category">Inteligência Artificial</div>
                         <div class="article-date">Mundo Conectado • 2025</div>
                     </div>
                     <h3>OpenAI anuncia iniciativa "OpenAI for Countries" para apoiar infraestrutura de IA em países aliados</h3>
                     <p class="article-subtitle">Projeto Stargate expande globalmente com parcerias estratégicas para desenvolvimento de infraestrutura democrática de IA</p>
-                    <p>Análise da nova estratégia geopolítica da OpenAI para expansão internacional, incluindo construção de datacenters locais e adaptação do ChatGPT para diferentes países. Examina implicações estratégicas do "OpenAI for Countries" e relação com o Projeto Stargate.</p>
-                    <div class="article-highlights">
-                        <strong>Destaques:</strong> Geopolítica de IA, infraestrutura global, parcerias governamentais, competição EUA-China, soberania digital
-                    </div>
                     <div class="article-footer">
-                        <a href="https://www.mundoconectado.com.br/inteligencia-artificial/openai-anuncia-iniciativa-openai-for-countries-para-apoiar-infraestrutura-de-ia-em-paises-aliados" target="_blank" class="article-link">
-                            <i class="fas fa-external-link-alt"></i> Ler artigo completo
-                        </a>
                         <div class="article-tags">
                             <span class="tag">OpenAI</span>
                             <span class="tag">Geopolítica</span>
                             <span class="tag">Infraestrutura</span>
                         </div>
                     </div>
-                </div>
-
-                <div class="article-card coming-soon">
-                    <div class="article-header">
-                        <div class="article-category">Em Breve</div>
-                        <div class="article-date">2025</div>
-                    </div>
-                    <h3>Novos artigos em desenvolvimento</h3>
-                    <p class="article-subtitle">Análises de dados e fact-checking em projetos futuros</p>
-                    <p>Trabalhando em novas análises quantitativas e reportagens baseadas em dados. Acompanhe as próximas publicações sobre inteligência artificial, combate à desinformação e jornalismo de dados.</p>
-                    <div class="article-footer">
-                        <div class="article-link coming-soon-text">
-                            <i class="fas fa-clock"></i> Em desenvolvimento
-                        </div>
-                        <div class="article-tags">
-                            <span class="tag">IA</span>
-                            <span class="tag">Data Science</span>
-                            <span class="tag">Fact-checking</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section class="section portfolio" id="portfolio">
-        <div class="container">
-            <div class="section-title">
-                <h2>Meus Trabalhos</h2>
-            </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <div class="portfolio-img">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Projeto GuaIA - Combate às Fake News</h3>
-                        <p>Desenvolvimento de soluções de IA para detecção e combate à desinformação eleitoral na UFG. Aplicação de machine learning e análise de dados textuais.</p>
-                        <div class="portfolio-meta">
-                            <div class="portfolio-tags">
-                                <span class="tag">IA</span>
-                                <span class="tag">Machine Learning</span>
-                                <span class="tag">Fake News</span>
-                            </div>
-                            <span class="portfolio-year">2024</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item">
-                    <div class="portfolio-img">
-                        <i class="fas fa-gamepad"></i>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Redação Tech - Adrenaline</h3>
-                        <p>Mais de 4 anos produzindo conteúdo especializado em tecnologia e games. Cobertura de lançamentos, análises de hardware e tendências do mercado tech.</p>
-                        <div class="portfolio-meta">
-                            <div class="portfolio-tags">
-                                <span class="tag">Tecnologia</span>
-                                <span class="tag">Games</span>
-                                <span class="tag">SEO</span>
-                            </div>
-                            <span class="portfolio-year">2021-2025</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item">
-                    <div class="portfolio-img">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Análise de Dados com R</h3>
-                        <p>Aplicação de métodos quantitativos em pesquisa social e jornalismo. Desenvolvimento de competências em estatística descritiva e visualização de dados.</p>
-                        <div class="portfolio-meta">
-                            <div class="portfolio-tags">
-                                <span class="tag">R Programming</span>
-                                <span class="tag">Estatística</span>
-                                <span class="tag">Data Science</span>
-                            </div>
-                            <span class="portfolio-year">2023-2024</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item">
-                    <div class="portfolio-img">
-                        <i class="fas fa-newspaper"></i>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>TecMundo & Mundo Conectado</h3>
-                        <p>Cobertura especializada em IA e tecnologia emergente para grandes portais. Análises de mercado e tendências tech para públicos especializados.</p>
-                        <div class="portfolio-meta">
-                            <div class="portfolio-tags">
-                                <span class="tag">IA</span>
-                                <span class="tag">Análise</span>
-                                <span class="tag">Tech News</span>
-                            </div>
-                            <span class="portfolio-year">2021-2025</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item">
-                    <div class="portfolio-img">
-                        <i class="fas fa-chalkboard-teacher"></i>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Educação Social - Professor Voluntário</h3>
-                        <p>Ensino de Sociologia no Cursinho Popular FazArte. Democratização do conhecimento e formação de jovens de baixa renda em Goiânia.</p>
-                        <div class="portfolio-meta">
-                            <div class="portfolio-tags">
-                                <span class="tag">Educação</span>
-                                <span class="tag">Sociologia</span>
-                                <span class="tag">Voluntário</span>
-                            </div>
-                            <span class="portfolio-year">2022-2024</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item">
-                    <div class="portfolio-img">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Certificações Profissionais</h3>
-                        <p>Formação contínua com certificações em Ciência de Dados (FGV), Buscas Avançadas em Redes Sociais (AFP) e análise de dados aplicada.</p>
-                        <div class="portfolio-meta">
-                            <div class="portfolio-tags">
-                                <span class="tag">FGV</span>
-                                <span class="tag">AFP</span>
-                                <span class="tag">Qualificação</span>
-                            </div>
-                            <span class="portfolio-year">2024-2025</span>
-                        </div>
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -1027,23 +799,7 @@
                 </div>
             </div>
             
-            <div class="contact-form">
-                <form>
-                    <div class="form-group">
-                        <input type="text" placeholder="Seu Nome" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Seu Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Assunto" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Sua Mensagem" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Enviar Mensagem</button>
-                </form>
-            </div>
+
         </div>
     </section>
 
@@ -1057,7 +813,7 @@
                     <div class="social-links">
                         <a href="https://www.linkedin.com/in/diego-amorim-goulart-52a8811a2" target="_blank"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/diegoamrg4123" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://x.com/amorimdiego29" target="_blank"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
@@ -1067,7 +823,6 @@
                         <li><a href="#home">Início</a></li>
                         <li><a href="#sobre">Sobre</a></li>
                         <li><a href="#artigos">Artigos</a></li>
-                        <li><a href="#portfolio">Trabalhos</a></li>
                         <li><a href="#servicos">Serviços</a></li>
                         <li><a href="#contato">Contato</a></li>
                     </ul>
@@ -1096,24 +851,5 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
-    <script>
-        // Form submission handling
-        document.querySelector('.contact-form form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const submitBtn = this.querySelector('.btn');
-            const originalText = submitBtn.textContent;
-            
-            submitBtn.textContent = 'Enviando...';
-            submitBtn.disabled = true;
-            
-            setTimeout(() => {
-                alert('Mensagem enviada com sucesso! Entrarei em contato em breve.');
-                this.reset();
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-            }, 2000);
-        });
-    </script>
 </body>
 </html>
